@@ -1,0 +1,39 @@
+.section_figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    animation: zoomIn 1.2s ease-in-out;
+}
+
+img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.section_figure figcaption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2C2C2C;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    &figcaption:hover {
+        background-color: rgba(151, 214, 214, 0.8);
+        color: #FFFFFF;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+}

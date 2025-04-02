@@ -1,0 +1,23 @@
+/* GENERAL */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: lightblue;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background: linear-gradient(to right, aqua, rgb(0, 123, 139));
+    border-radius: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,40 @@
+.table_section table {
+    width: 30rem;
+    height: 20rem;
+    max-width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    animation: slideUp 1s ease-in-out;
+    
+    & caption {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #2C2C2C;
+        text-align: center;
+    }
+}
+
+.table_section th,
+.table_section td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.table_section th {
+    background-color: rgb(64, 211, 211);
+    color: #2C2C2C;
+}
+
+.table_section tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.table_section tr:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
