@@ -1,0 +1,222 @@
+/* Variables */
+/* Dark blue */
+/* Light blue */
+/* Red for contrast */
+/* Very light blue */
+/* Light blue */
+/* White */
+/* Dark blue */
+/* Dark gray */
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #e6f4f9;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  /* transition: color $transition-speed ease, transform 0.4s ease-in-out; */
+  display: inline-block;
+  animation: slideIn 1.5s ease-in-out forwards; /* Animation on load */
+  opacity: 0; /* Initial state */
+}
+a:hover {
+  color: #e74c3c;
+  transform: scale(1.1); /*Adds the scaling effect */
+}
+
+/* Header */
+.header {
+  background: #3498db;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.header__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1s ease forwards;
+}
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.header__nav-list li a {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+.header__nav-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.5);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.hero__image {
+  width: 15%;
+  height: 10%; 
+  object-fit: cover; 
+  border-radius: 40px; 
+  border: 3px solid #3498db; 
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+.hero__image:hover {
+  transform: scale(1.05);
+}
+.hero__caption {
+  font-style: italic;
+  color: #2c3e50;
+  margin-top: 0.5rem;
+}
+.hero__subtitle {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+/* About Section */
+.about {
+  padding: 2rem 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.about__title {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about__description {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about__details {
+  padding: 1rem;
+  text-align: center;
+}
+.about__summary {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #3498db;
+  font-weight: 500;
+}
+.about__summary:hover {
+  color: #e74c3c;
+}
+.about__link {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2c3e50;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+.footer__text {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header__nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero__image {
+    width: 150px;
+    height: 150px;
+  }
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px); /* Slide from left */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* End at normal position */
+    opacity: 1;
+  }
+}/*# sourceMappingURL=FinallPROJECTTT.css.map */

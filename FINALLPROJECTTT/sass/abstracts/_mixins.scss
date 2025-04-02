@@ -1,0 +1,11 @@
+/* Mixins */
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+}
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}

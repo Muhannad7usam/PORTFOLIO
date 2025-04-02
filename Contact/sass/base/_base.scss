@@ -1,0 +1,22 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+    animation: FadeIn 1.5s ease-out forwards;
+    animation-delay: 0.5s; /* Delay the appearance until after header animations */
+    opacity: 0; /* Start hidden */
+}

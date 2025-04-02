@@ -1,0 +1,12 @@
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #001d8b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: auto;
+    animation: FadeIn 1.5s ease-out forwards;
+    animation-delay: .5s; /* Appear slightly later than the certificates section */
+    opacity: 0; /* Start hidden */
+}

@@ -1,0 +1,40 @@
+.about {
+    padding: $spacing-large 0;
+    background: $color-white;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 6px $color-shadow;
+    margin-bottom: $spacing-large;
+
+    &__title {
+        font-size: 2rem;
+        color: $color-primary;
+        text-align: center;
+        margin-bottom: $spacing-medium;
+    }
+
+    &__description {
+        text-align: center;
+        margin-bottom: $spacing-medium;
+    }
+
+    &__details {
+        padding: $spacing-medium;
+        text-align: center;
+    }
+
+    &__summary {
+        margin-top: $spacing-medium;
+        cursor: pointer;
+        color: $color-secondary;
+        font-weight: 500;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+
+    &__link {
+        color: $color-accent;
+        font-weight: 500;
+    }
+}

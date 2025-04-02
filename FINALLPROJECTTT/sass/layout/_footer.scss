@@ -1,0 +1,14 @@
+/* Footer */
+.footer {
+    text-align: center;
+    padding: $spacing-medium;
+    background: $color-footer-bg;
+    color: $color-white;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 6px $color-shadow;
+    margin-top: $spacing-large;
+    
+    &__text {
+        font-size: 0.9rem;
+    }
+}

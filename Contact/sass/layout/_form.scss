@@ -1,0 +1,72 @@
+/* Main Content Styling */
+.main-content {
+    margin: 2rem auto;
+    max-width: 800px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section {
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #004aad;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.fieldset {
+    border: 2px solid #004aad;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #004aad;
+    padding: 0 0.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 10px;
+
+    &-btn {
+        display: flex;
+        gap: 0.5rem;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    &-group label,
+    &-btn label {
+        font-weight: bold;
+    }
+
+    input {
+        width: 50%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+}
+
+textarea {
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}

@@ -1,0 +1,23 @@
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    color: $color-primary;
+    margin-bottom: $spacing-medium;
+}
+
+p {
+    margin-bottom: $spacing-medium;
+}
+
+a {
+    color: $color-secondary;
+    text-decoration: none;
+    display: inline-block;
+    animation: slideIn 1.5s ease-in-out forwards;
+    opacity: 0;
+
+    &:hover {
+        color: $color-accent;
+        transform: scale(1.1);
+    }
+}

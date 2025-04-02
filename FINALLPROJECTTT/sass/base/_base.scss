@@ -1,0 +1,25 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    background: $color-background;
+    color: $color-text;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: $spacing-medium;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}

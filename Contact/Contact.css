@@ -1,0 +1,235 @@
+/* Variables */
+/* Dark blue */
+/* Light blue */
+/* Red for contrast */
+/* Very light blue */
+/* Light blue */
+/* White */
+/* Dark blue */
+/* Dark gray */
+/* ANIMATIONS */
+@keyframes MoveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes MoveInRightWithFlip {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) rotateY(90deg);
+  }
+  80% {
+    transform: translateX(-10px) rotateY(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hedvig Letters Sans", sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+  animation: FadeIn 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* Delay the appearance until after header animations */
+  opacity: 0; /* Start hidden */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+  button {
+    width: 100%;
+  }
+}
+/* Buttons */
+.form-group-btn input {
+  width: 10%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #004aad; /* Use background-color */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Ensure background-color is used */
+}
+button:hover {
+  background-color: #00d4ff; /* Change background-color instead of background */
+}
+
+/* Main Content Styling */
+.main-content {
+  margin: 2rem auto;
+  max-width: 800px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #004aad;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fieldset {
+  border: 2px solid #004aad;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #004aad;
+  padding: 0 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 10px;
+}
+.form-group-btn {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.form-group-group label, .form-group-btn label {
+  font-weight: bold;
+}
+.form-group input {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #004aad;
+  color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header-title {
+  font-size: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  animation: MoveInRightWithFlip 2s ease-out forwards;
+  backface-visibility: hidden;
+}
+.header-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.header-menu li {
+  text-transform: uppercase;
+  font-weight: 500;
+  animation-name: MoveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.header-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.header-menu a:hover {
+  color: #00d4ff;
+  font-weight: bolder;
+  background-color: #e4f7ff;
+  padding: 8px;
+  border: 1px solid #f8fdff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.7);
+  transform: scale(2);
+  transition: transform 0.3s ease;
+}/*# sourceMappingURL=Contact.css.map */

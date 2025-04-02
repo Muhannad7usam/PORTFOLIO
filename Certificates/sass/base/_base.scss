@@ -1,0 +1,22 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    background-color: lightblue;
+}
+
+body {
+    color: #f0f0f0;
+    background: linear-gradient(to right, #00d4ff, #001d8b);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

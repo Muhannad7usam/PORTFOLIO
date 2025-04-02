@@ -1,0 +1,52 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #004aad;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+    &-title {
+        font-size: 2rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        animation: MoveInRightWithFlip 2s ease-out forwards;
+        backface-visibility: hidden;
+    }
+
+    &-menu {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+
+        li {
+            text-transform: uppercase;
+            font-weight: 500;
+            animation-name: MoveInLeft;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #00d4ff;
+                font-weight: bolder;
+                background-color: #e4f7ff;
+                padding: 8px;
+                border: 1px solid #f8fdff;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.7);
+                transform: scale(2);
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+}

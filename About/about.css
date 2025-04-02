@@ -1,0 +1,225 @@
+/* Variables */
+/* Dark blue */
+/* Light blue */
+/* Red for contrast */
+/* Very light blue */
+/* Light blue */
+/* White */
+/* Dark blue */
+/* Dark gray */
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* GENERAL */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: lightblue;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background: linear-gradient(to right, aqua, rgb(0, 123, 139));
+  border-radius: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .table_section table {
+    width: 95%; /* Adjust table width to 95% of the container */
+    font-size: 0.9rem;
+  }
+  .table_section th, .table_section td {
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+  }
+}
+.section_figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  animation: zoomIn 1.2s ease-in-out;
+}
+
+img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+.section_figure figcaption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2C2C2C;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section_figure figcaptionfigcaption:hover {
+  background-color: rgba(151, 214, 214, 0.8);
+  color: #FFFFFF;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.table_section table {
+  width: 30rem;
+  height: 20rem;
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: slideUp 1s ease-in-out;
+}
+.table_section table caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2C2C2C;
+  text-align: center;
+}
+
+.table_section th,
+.table_section td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.table_section th {
+  background-color: rgb(64, 211, 211);
+  color: #2C2C2C;
+}
+
+.table_section tr:nth-child(even) {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.table_section tr:hover {
+  background-color: rgba(200, 200, 200, 0.8);
+}
+
+.footer {
+  margin-top: auto;
+  background-color: rgb(64, 211, 211);
+  padding: 1rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.footer__text {
+  color: #2C2C2C;
+  font-weight: bold;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(64, 211, 211);
+  padding: 1.05rem;
+  color: #2C2C2C;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+.header_ul {
+  display: flex;
+  gap: 10px;
+}
+.header li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.header li a {
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.header li a:hover {
+  background-color: rgb(151, 214, 214);
+  padding: 0.6;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+/* MAIN CONTENT */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  animation: slideIn 1s ease-in-out;
+}/*# sourceMappingURL=about.css.map */

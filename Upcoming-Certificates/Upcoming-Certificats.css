@@ -1,0 +1,142 @@
+/* Variables */
+/* Blue */
+/* Light blue */
+/* Coral Red */
+/* Alice Blue */
+/* Dark gray */
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f0f8ff;
+  color: #333333;
+  line-height: 1.6;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0033a0;
+  color: wheat;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.header_h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.header_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.header_nav ul li a {
+  color: wheat;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.4s ease;
+  display: inline-block;
+}
+.header_nav ul li a:hover {
+  color: #ff6f61;
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.32);
+  border-radius: 20px;
+}
+
+/* Main Content - Navigation for Certificates */
+.nav_certificate {
+  width: 70%;
+  margin-top: 2rem;
+}
+.nav_certificate section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.nav_certificate figure {
+  text-align: center;
+  width: 45%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  padding: 20px;
+  background-color: rgb(162, 182, 199);
+}
+.nav_certificate figure:hover {
+  transform: scale(1.05);
+}
+.nav_certificate img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #0033a0;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #001d8b;
+  color: wheat;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: 2rem;
+}
+.footerp {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header_nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-small);
+  }
+  .nav_certificate section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_certificate figure {
+    width: 80%;
+    margin-bottom: var(--spacing-medium);
+  }
+  .header_h1 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=Upcoming-Certificats.css.map */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Muhannad Husam">
+    <title>Contact Me</title>
+    <link rel="icon" href="../IMAGES/Contact.jpg">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <script src="contact.js"></script>
+    <!-- Header Section -->
+    <div class="div">
+        <header class="header">
+            <h1 class="header-title" title="Opening">Contact Me</h1>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="../index.html" title="Go to Home">Home</a></li>
+                    <li><a href="../Certificates/Certificates.html" title="View Certificates">Certificates</a></li>
+                    <li><a href="../Upcoming-Certificates/Upcoming-Certificats.html" title="Upcoming Certificates">Upcoming Certificates</a></li>
+                    <li><a href="../About/about.html" title="Learn About Me">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contact Form Section -->
+        <main class="main-content">
+            <section class="form-section">
+                <h2>Contact Me</h2>
+                <form action="#" method="post" class="contact-form">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <div class="Form">
+                            <div class="form-group">
+                                <label for="Name">Your Name:</label>
+                                <input type="text" id="Name" name="Name" placeholder="Write your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="LastName">Last Name:</label>
+                                <input type="text" id="LastName" name="LastName" placeholder="Write your last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel">Telephone:</label>
+                                <input type="tel" id="tel" name="tel" placeholder="0101111111" pattern="[0-9]{3}[0-9]{4}[0-9]{4}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="decade">Decade:</label>
+                                <div class="form-group-btn">
+                                    <input type="number" id="decade" name="decade" min="1950" max="2040" step="3" value="2024">
+                                    <button type="button" class="increment-btn" onclick="increment()">Increment</button>
+                                    <button type="button" class="decrement-btn" onclick="decrement()">Decrement</button>
+                                    <button type="submit" id="Submit" onclick="Save()">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Send Me Your Details</legend>
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" id="submit" onclick="save()">Submit</button>
+                            <button type="submit" id="Post" onclick="Post()" formaction="https://www.google.com" formmethod="post">Post</button>
+                            <button type="reset" id="Reset" onclick="Reset()">Reset</button>
+                            <p id="error"></p>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </div>    
+</body>
+</html>

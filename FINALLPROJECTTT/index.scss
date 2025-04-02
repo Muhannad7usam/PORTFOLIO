@@ -1,0 +1,19 @@
+@use "sass/abstracts/functions";
+@use "sass/abstracts/mixins";
+@use "sass/abstracts/variables";
+
+@use "sass/base/animations";
+@use "sass/base/base";
+@use "sass/base/typography";
+@use "sass/base/utilities";
+
+
+@use "sass/components/buttons";
+@use "sass/components/cards";
+
+@use "sass/components/header";
+@use "sass/components/footer";
+
+
+@use "sass/pages/about";
+@use "sass/pages/home"; 

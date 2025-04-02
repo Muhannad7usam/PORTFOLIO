@@ -1,0 +1,52 @@
+.certificates_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 120rem;
+    animation: FadeIn 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 1rem $color-shadow;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 35rem;
+    
+    &:hover {
+        transform: scale(1.05);
+
+        &::after{
+            transform: scale(1);
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 25rem;
+        height: auto;
+        border: 4px solid lightslategrey;
+        border-radius: 5px;
+        margin-top: 2rem;
+    }
+
+    figcaption {
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #0033a0;
+        text-align: center;
+    }
+}

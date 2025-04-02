@@ -1,0 +1,43 @@
+/* Main Content - Navigation for Certificates */
+.nav_certificate {
+    width: 70%;
+    margin-top: $spacing-large;
+    
+    & section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: $spacing-large;
+    }
+
+    & figure {
+        text-align: center;
+        width: 45%;
+        box-shadow: 0 4px 6px $color-shadow;
+        border-radius: $border-radius;
+        transition: transform 0.3s ease;
+        padding: 20px;
+        background-color: rgb(162, 182, 199);
+
+        opacity: 0;
+        animation: slideIn 1s ease-in-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    & figure:hover {
+        transform: scale(1.05);
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+    }
+}
+
+figcaption {
+    margin-top: $spacing-small;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: $color-primary;
+}

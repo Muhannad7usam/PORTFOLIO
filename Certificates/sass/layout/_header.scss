@@ -1,0 +1,50 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #0033a0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    
+    &_h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: MoveInRightWithFlip 2s ease-out forwards; /* Apply animation with a flip */
+    backface-visibility: hidden; /* Ensure the back face doesn't show */
+}
+
+    &_ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+                & li {
+                text-transform: uppercase;
+                font-weight: 500;
+                animation-name: MoveInLeft;
+                animation-duration: 2s; /* Specify the duration of the animation */
+                animation-timing-function: ease-out; /* Optional: Define the timing function */
+            }
+
+                & a {
+                text-decoration: none;
+                color: #ffffff;
+                transition: color 0.3s;
+            }
+
+                & a:hover {
+                color: #00d4ff;
+                font-weight: bolder;
+                background-color: #e4f7ff;
+                padding: 8px;
+                border: 1px solid #f8fdff;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.7);
+                transform: scale(2); /* Doubles the size of the link */
+                transition: transform 0.3s ease; /* Smooth transition for the size change */
+            }
+        }
+    }

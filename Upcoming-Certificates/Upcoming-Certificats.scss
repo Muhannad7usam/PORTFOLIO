@@ -1,0 +1,16 @@
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Base
+@import "base/animations";
+@import "base/base";
+@import "base/responsive";
+@import "base/typography";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/certificates";

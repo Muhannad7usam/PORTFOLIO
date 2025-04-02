@@ -1,0 +1,17 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "landing to other projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muhannad",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}

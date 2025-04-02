@@ -1,0 +1,8 @@
+/* Functions */
+@function lighten-color($color, $percentage) {
+    @return lighten($color, $percentage);
+}
+
+@function darken-color($color, $percentage) {
+    @return darken($color, $percentage);
+}
